@@ -11,6 +11,10 @@ module.exports = {
         .then(res => res.text())
         .then(xml => parseXML(xml, {trim: true, explicitArray: false}))
         .then(data => JSON.parse(JSON.stringify(data['ArrayOfTrackingRecord']['TrackingRecord'])))
+        .then(data => {
+          console.log(data);
+          return data;
+        })
         .catch(err => console.log(err))
   }
 };
