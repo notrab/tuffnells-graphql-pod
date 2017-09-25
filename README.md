@@ -28,6 +28,24 @@ To start the development server, you must run:
   yarn dev
   ```
 
+## Example Query
+
+  ```graphql
+  {
+  Pod(AccountCode: 123456, Reference:"N123456") {
+    Authorised
+    DeliveryAddress{
+      CompanyName
+      Address1
+      Town
+      Postcode
+      ContactName
+      ContactTelephone
+    }
+  }
+}
+  ```
+
 ## Deploy
 
   ```
