@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 const util = require('util');
 const parseXML = util.promisify(require('xml2js').parseString);
+const {NotAuthorised} = require('./errors');
 
 module.exports = {
   Query: {
@@ -13,13 +14,10 @@ module.exports = {
         .then(data => JSON.parse(JSON.stringify(data['ArrayOfTrackingRecord']['TrackingRecord'])))
         .then(data => {
           if (data.Authorised.startsWith('Not')) {
-            const error = new Error('Not Authorised');
-            error.statusCode = 401;
-            throw error;
+            throw new NotAuthorised();
           }
 
           return data;
         })
-        .catch(err => console.error(err))
   }
 };

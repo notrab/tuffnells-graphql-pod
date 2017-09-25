@@ -1,6 +1,6 @@
 const server = require('apollo-server-micro');
 const {makeExecutableSchema} = require('graphql-tools');
-const {formatError} = require('graphql');
+const {formatError} = require('apollo-errors');
 
 const typeDefs = require('./typeDefs');
 const resolvers = require('./resolvers');
@@ -11,5 +11,6 @@ const schema = makeExecutableSchema({
 });
 
 module.exports = server.microGraphql({
+  formatError,
   schema
 });
