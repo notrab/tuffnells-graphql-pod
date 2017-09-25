@@ -13,8 +13,6 @@
     "graphql-tools": "1.2.3",
     "micro": "9.0.0",
     "node-fetch": "1.7.3",
-    "request": "^2.82.0",
-    "request-promise": "^4.2.2",
     "xml2js": "0.4.19"
   }
 }
