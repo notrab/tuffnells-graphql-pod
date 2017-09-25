@@ -1,0 +1,17 @@
+{
+  "name": "pod-graphql-finder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "micro"
+  },
+  "dependencies": {
+    "apollo-server-micro": "1.1.2",
+    "graphql": "0.11.3",
+    "graphql-tools": "1.2.3",
+    "micro": "9.0.0",
+    "node-fetch": "1.7.3",
+    "xml2js": "0.4.19"
+  }
+}
