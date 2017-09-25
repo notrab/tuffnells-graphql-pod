@@ -1,6 +1,6 @@
 {
-  "name": "pod-graphql-finder",
-  "version": "0.0.1",
+  "name": "graphql-pod-fetcher",
+  "version": "0.0.2",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
