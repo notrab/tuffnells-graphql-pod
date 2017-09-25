@@ -12,9 +12,16 @@ module.exports = {
         .then(xml => parseXML(xml, {trim: true, explicitArray: false}))
         .then(data => JSON.parse(JSON.stringify(data['ArrayOfTrackingRecord']['TrackingRecord'])))
         .then(data => {
-          console.log(data);
+          if (data.Authorised.startsWith('Not')) {
+            const error = new Error('Not Authorised');
+            error.statusCode = 401;
+            throw error;
+          }
+
           return data;
         })
-        .catch(err => console.log(err))
+        .catch(err => {
+          error: err.message;
+        })
   }
 };
