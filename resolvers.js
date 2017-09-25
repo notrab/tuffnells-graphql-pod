@@ -20,8 +20,6 @@ module.exports = {
 
           return data;
         })
-        .catch(err => {
-          error: err.message;
-        })
+        .catch(err => console.error(err))
   }
 };
