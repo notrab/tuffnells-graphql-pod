@@ -14,6 +14,8 @@ module.exports = {
         .then(xml => parseXML(xml, {trim: true, explicitArray: false}))
         .then(data => JSON.parse(JSON.stringify(data['ArrayOfTrackingRecord']['TrackingRecord'])))
         .then(data => {
+          console.log(data);
+
           if (data.Authorised.startsWith('Not')) {
             throw new NotAuthorised();
           }
@@ -28,7 +30,15 @@ module.exports = {
             throw new IncorrectPostcode();
           }
 
-          return data;
+          const movements = data.MovementInformation.Movement;
+          const scans = data.ScanInformation.Scan;
+
+          return {
+            ...data,
+            MovementInformation: [...movements],
+            TimedInformation: data.TimedInformation.TimedDelivery,
+            ScanInformation: [...scans]
+          };
         })
   }
 };

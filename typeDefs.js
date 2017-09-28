@@ -38,7 +38,7 @@ module.exports = `
     MovementTime: String
     Description: String
     DeliveryDepot: String
-    Round: Int
+    Round: String
     DeliveryDate: String
     PackagesReceived: Int!
     PackagesDelivered: Int!
@@ -59,6 +59,14 @@ module.exports = `
     SignatureTime: String
   }
 
+  type ImageInformation {
+    PODImage: PODImage
+  }
+
+  type PODImage {
+    URL: String
+  }
+
   type Pod {
     Authorised: String
     DeliveryAddress: DeliveryAddress
@@ -67,6 +75,7 @@ module.exports = `
     MovementInformation: [Movement]
     TimedInformation: TimedDelivery
     ScanInformation: [Scan]
+    ImageInformation: ImageInformation
   }
 
   type Query {
