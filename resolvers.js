@@ -25,19 +25,17 @@ module.exports = {
         .then(xml => parseXML(xml, {trim: true, explicitArray: false}))
         .then(data => JSON.parse(JSON.stringify(data['ArrayOfTrackingRecord']['TrackingRecord'])))
         .then(data => {
-          console.log(data);
-
           if (data.Authorised.startsWith('Not')) {
             throw new NotAuthorised();
           }
 
-          const safePostCode = new Posty(Postcode);
+          const postyCode = new Posty(Postcode);
 
-          if (!safePostCode.valid()) {
+          if (!postyCode.valid()) {
             throw new InvalidPostcode();
           }
 
-          if (data.DeliveryAddress.Postcode !== safePostCode.normalise()) {
+          if (data.DeliveryAddress.Postcode !== postyCode.normalise()) {
             throw new IncorrectPostcode();
           }
 
