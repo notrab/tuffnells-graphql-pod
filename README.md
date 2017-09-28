@@ -34,13 +34,38 @@ To start the development server, you must run:
   {
     Pod(AccountCode: 123456, Reference:"N123456", Postcode: "NE42 6PX") {
       Authorised
-      DeliveryAddress{
+      DeliveryAddress {
         CompanyName
-        Address1
-        Town
         Postcode
-        ContactName
-        ContactTelephone
+      }
+      ConsignmentInformation {
+        Pieces
+        Pallets
+        Weight
+        Service
+        DeliveryDate
+        ItemsDelivered
+        ConsignmentRef
+        SpecialInstructions
+        URN
+      }
+      MovementInformation{
+        MovementDate
+        Round
+        DeliveryDepot
+      }
+      TimedInformation {
+        Signature
+        SignatureDate
+        SignatureTime
+      }
+      ScanInformation{
+        PieceID
+      }
+      ImageInformation {
+        PODImage {
+          URL
+        }
       }
     }
   }
