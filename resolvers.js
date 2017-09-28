@@ -1,11 +1,12 @@
 const fetch = require('node-fetch');
 const util = require('util');
 const parseXML = util.promisify(require('xml2js').parseString);
-const {NotAuthorised} = require('./errors');
+const {NotAuthorised, InvalidPostcode, IncorrectPostcode} = require('./errors');
+const Posty = require('postcode');
 
 module.exports = {
   Query: {
-    Pod: (_, {AccountCode, Reference}) =>
+    Pod: (_, {AccountCode, Reference, Postcode}) =>
       fetch(
         `http://www.tpeweb.co.uk/WebServices/Customer/PODTrackingData.asmx/GetTrackingRecord?AccountCode=${AccountCode}&Reference=${Reference}`
       )
@@ -15,6 +16,16 @@ module.exports = {
         .then(data => {
           if (data.Authorised.startsWith('Not')) {
             throw new NotAuthorised();
+          }
+
+          const safePostCode = new Posty(Postcode);
+
+          if (!safePostCode.valid()) {
+            throw new InvalidPostcode();
+          }
+
+          if (data.DeliveryAddress.Postcode !== safePostCode.normalise()) {
+            throw new IncorrectPostcode();
           }
 
           return data;

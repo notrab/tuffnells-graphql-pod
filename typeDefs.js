@@ -70,6 +70,6 @@ module.exports = `
   }
 
   type Query {
-    Pod(AccountCode: Int!, Reference: String!): Pod
+    Pod(AccountCode: Int!, Reference: String!, Postcode: String!): Pod
   }
 `;

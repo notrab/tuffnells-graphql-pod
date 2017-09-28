@@ -1238,6 +1238,10 @@ pkg-up@2.0.0:
   dependencies:
     find-up "^2.1.0"
 
+postcode@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/postcode/-/postcode-0.2.5.tgz#1c1893a7b6da2ea5c8f19bff158593ac81502c78"
+
 preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
