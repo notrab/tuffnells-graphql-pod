@@ -1,4 +1,4 @@
-# GraphQL POD Fetcher
+# Tuffnells POD Finder
 
 This serverless function returns a GraphQL resolver for consuming the Tuffnells XML endpoint.
 

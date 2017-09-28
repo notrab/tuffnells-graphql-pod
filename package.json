@@ -1,5 +1,5 @@
 {
-  "name": "pod-fetcher.api.norseal.co.uk",
+  "name": "tuffnells-pod-finder",
   "private": true,
   "version": "0.0.2",
   "main": "index.js",
@@ -13,6 +13,7 @@
     "apollo-server-micro": "1.1.2",
     "graphql": "0.11.3",
     "graphql-tools": "1.2.3",
+    "https-proxy-agent": "^2.1.0",
     "micro": "9.0.0",
     "node-fetch": "1.7.3",
     "postcode": "^0.2.5",

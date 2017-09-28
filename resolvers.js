@@ -3,12 +3,23 @@ const util = require('util');
 const parseXML = util.promisify(require('xml2js').parseString);
 const {NotAuthorised, InvalidPostcode, IncorrectPostcode} = require('./errors');
 const Posty = require('postcode');
+var HttpsProxyAgent = require('https-proxy-agent');
+
+let agent = null;
+const {PROXY_URI} = process.env;
+
+if (PROXY_URI) {
+  agent = new HttpsProxyAgent(PROXY_URI);
+}
 
 module.exports = {
   Query: {
     Pod: (_, {AccountCode, Reference, Postcode}) =>
       fetch(
-        `http://www.tpeweb.co.uk/WebServices/Customer/PODTrackingData.asmx/GetTrackingRecord?AccountCode=${AccountCode}&Reference=${Reference}`
+        `http://www.tpeweb.co.uk/WebServices/Customer/PODTrackingData.asmx/GetTrackingRecord?AccountCode=${AccountCode}&Reference=${Reference}`,
+        {
+          agent
+        }
       )
         .then(res => res.text())
         .then(xml => parseXML(xml, {trim: true, explicitArray: false}))
