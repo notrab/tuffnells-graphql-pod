@@ -6,10 +6,10 @@ const Posty = require('postcode');
 var HttpsProxyAgent = require('https-proxy-agent');
 
 let agent = null;
-const {PROXY_URI} = process.env;
+const {QUOTAGUARDSTATIC_URL} = process.env;
 
-if (PROXY_URI) {
-  agent = new HttpsProxyAgent(PROXY_URI);
+if (QUOTAGUARDSTATIC_URL) {
+  agent = new HttpsProxyAgent(QUOTAGUARDSTATIC_URL);
 }
 
 module.exports = {
