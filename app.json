@@ -1,8 +1,8 @@
 {
-  "name": "norseal-pod-finder",
+  "name": "tuffnells-graphql-pod",
   "description": "This GraphQL endpoint talks with Tuffnells and converts XML.",
-  "website": "https://pod-finder.api.norseal.co.uk",
-  "repository": "https://github.com/norseal/pod-finder",
+  "website": "https://github.com/notrab/tuffnells-graphql-pod",
+  "repository": "https://github.com/notrab/tuffnells-graphql-pod",
   "keywords": ["es2015", "graphql", "apollo"],
   "addons": [
     "quotaguardstatic",
