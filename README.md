@@ -5,8 +5,8 @@ This serverless function returns a GraphQL resolver for consuming the Tuffnells 
 ## Installation
 
   ```bash
-  git clone https://github.com/Norseal/pod-fetcher.api.norseal.co.uk.git
-  cd pod-fetcher.api.norseal.co.uk
+  git clone https://github.com/notrab/tuffnells-graphql-pod.git
+  cd tuffnells-graphql-pod
   yarn
   ```
 
