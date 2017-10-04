@@ -12,12 +12,12 @@ This serverless function returns a GraphQL resolver for consuming the Tuffnells 
 
 ## Configuration
 
-Tuffnells uses IP based authentication. In production, it is recommended you use a Proxy with a fixed IP to relay requests.
+Tuffnells uses IP based authentication. In production, it is recommended you use a Proxy with a fixed IP to relay requests. I use [QuotaGuard](https://www.quotaguard.com/).
 
-The `PROXY_URI` must be available to the current `process`.
+The `QUOTAGUARDSTATIC_URL` must be available to the current `process`.
 
   ```bash
-  export PROXY_URI=
+  export QUOTAGUARDSTATIC_URL=
   ```
 
 ## Development
