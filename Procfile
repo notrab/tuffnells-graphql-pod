@@ -1,1 +1,1 @@
-web: micro
+web: micro dist
