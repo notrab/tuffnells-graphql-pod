@@ -2,10 +2,6 @@
 # yarn lockfile v1
 
 
-"@types/graphql@^0.9.0":
-  version "0.9.4"
-  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.9.4.tgz#cdeb6bcbef9b6c584374b81aa7f48ecf3da404fa"
-
 abbrev@1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.0.tgz#d0554c2256636e2f56e7c2e5ad183f859428d81f"
@@ -76,28 +72,28 @@ apollo-link@^0.8.0:
     apollo-utilities "^0.2.0-beta.0"
     zen-observable "^0.6.0"
 
-apollo-server-core@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/apollo-server-core/-/apollo-server-core-1.1.0.tgz#74c3bf4394e14eae7ab60b1d999a3c5b8aa94e9a"
+apollo-server-core@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/apollo-server-core/-/apollo-server-core-1.1.7.tgz#4d7df340a44e949e98ab6ca405f54e862ef5416e"
   dependencies:
-    apollo-tracing "^0.0.7"
+    apollo-tracing "^0.0.x"
 
-apollo-server-micro@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/apollo-server-micro/-/apollo-server-micro-1.1.2.tgz#113cc46c3af73f472d3f05c048718062edaf3b0f"
+apollo-server-micro@1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/apollo-server-micro/-/apollo-server-micro-1.1.7.tgz#2b49a891d40b1de8201c503083fb8baedad5dd5a"
   dependencies:
-    apollo-server-core "^1.1.0"
-    apollo-server-module-graphiql "^1.1.2"
+    apollo-server-core "^1.1.7"
+    apollo-server-module-graphiql "^1.1.6"
 
-apollo-server-module-graphiql@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/apollo-server-module-graphiql/-/apollo-server-module-graphiql-1.1.2.tgz#49a154cf80e984acb082bd0096175b561e1bfbcc"
+apollo-server-module-graphiql@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/apollo-server-module-graphiql/-/apollo-server-module-graphiql-1.1.6.tgz#9a0c8ff7ed7c4fff313065db388f08b1e7b6f9b9"
 
-apollo-tracing@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/apollo-tracing/-/apollo-tracing-0.0.7.tgz#78466cfefdb52a0802a57b488d26a1a67a25909f"
+apollo-tracing@^0.0.x:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/apollo-tracing/-/apollo-tracing-0.0.9.tgz#37fd4a7f5340f6e2ac9437d284f10ae2b1c85ad1"
   dependencies:
-    graphql-tools "^1.1.0"
+    graphql-tools "^2.2.0"
 
 apollo-utilities@^0.2.0-beta.0:
   version "0.2.0-rc.0"
@@ -1304,22 +1300,13 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.4:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
-graphql-tools@2.5.1:
+graphql-tools@2.5.1, graphql-tools@^2.2.0:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-2.5.1.tgz#542c48d4f9a532e09280ae216084813ea7ba4b18"
   dependencies:
     apollo-link "^0.8.0"
     deprecated-decorator "^0.1.6"
     uuid "^3.1.0"
-
-graphql-tools@^1.1.0:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-1.2.3.tgz#079bf4d157e46c0a0bae9fec117e0eea6e03ba2c"
-  dependencies:
-    deprecated-decorator "^0.1.6"
-    uuid "^3.0.1"
-  optionalDependencies:
-    "@types/graphql" "^0.9.0"
 
 graphql@0.11.7:
   version "0.11.7"
@@ -2548,7 +2535,7 @@ utila@~0.4:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/utila/-/utila-0.4.0.tgz#8a16a05d445657a3aea5eecc5b12a4fa5379772c"
 
-uuid@^3.0.0, uuid@^3.0.1, uuid@^3.1.0:
+uuid@^3.0.0, uuid@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.1.0.tgz#3dd3d3e790abc24d7b0d3a034ffababe28ebbc04"
 
