@@ -5,6 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "micro",
     "dev": "micro-dev",
     "build": "babel src -d dist"
   },
