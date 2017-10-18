@@ -73,6 +73,16 @@ To start the development server, you must run:
 
 ## Deploy
 
+In production the process variable `QUOTAGUARDSTATIC_URL` must be present.
+
+If you're deploying for the first time, you must store the ENV variable.
+
+  ```bash
+    now secret add quotaguardstatic_url value-here
   ```
-  now
+
+If `QUOTAGUARDSTATIC_URL` is already set, you must deploy and expose the `ENV` variable.
+
+  ```bash
+  now -e QUOTAGUARDSTATIC_URL=@quotaguardstatic_url
   ```
