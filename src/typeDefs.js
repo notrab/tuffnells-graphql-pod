@@ -81,4 +81,4 @@ module.exports = `
   type Query {
     Pod(AccountCode: Int!, Reference: String!, Postcode: String!): Pod
   }
-`;
+`
