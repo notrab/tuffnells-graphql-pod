@@ -778,9 +778,9 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-boxen@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/boxen/-/boxen-1.2.1.tgz#0f11e7fe344edb9397977fc13ede7f64d956481d"
+boxen@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/boxen/-/boxen-1.2.2.tgz#3f1d4032c30ffea9d4b02c322eaf2ea741dcbce5"
   dependencies:
     ansi-align "^2.0.0"
     camelcase "^4.0.0"
@@ -809,10 +809,6 @@ builtin-modules@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
 
-bytes@2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/bytes/-/bytes-2.5.0.tgz#4c9423ea2d252c270c41b2bdefeff9bb6b62c06a"
-
 bytes@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"
@@ -829,9 +825,9 @@ caseless@~0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
 
-chalk@2.1.0, chalk@^2.0.1:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.1.0.tgz#ac5becf14fa21b99c6c92ca7a7d7cfd5b17e743e"
+chalk@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.3.0.tgz#b5ea48efc9c1793dccc9b4767c93914d3f2d52ba"
   dependencies:
     ansi-styles "^3.1.0"
     escape-string-regexp "^1.0.5"
@@ -846,6 +842,14 @@ chalk@^1.1.3:
     has-ansi "^2.0.0"
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
+
+chalk@^2.0.1:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.1.0.tgz#ac5becf14fa21b99c6c92ca7a7d7cfd5b17e743e"
+  dependencies:
+    ansi-styles "^3.1.0"
+    escape-string-regexp "^1.0.5"
+    supports-color "^4.0.0"
 
 chokidar@1.7.0, chokidar@^1.6.1:
   version "1.7.0"
@@ -992,10 +996,6 @@ delayed-stream@~1.0.0:
 delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
-
-depd@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.0.tgz#e1bd82c6aab6ced965b97b88b17ed3e528ca18c3"
 
 depd@1.1.1:
   version "1.1.1"
@@ -1255,9 +1255,9 @@ get-caller-file@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.2.tgz#f702e63127e7e231c160a80c1554acb70d5047e5"
 
-get-port@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/get-port/-/get-port-3.1.0.tgz#ef01b18a84ca6486970ff99e54446141a73ffd3e"
+get-port@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/get-port/-/get-port-3.2.0.tgz#dd7ce7de187c06c8bf353796ac71e099f0980ebc"
 
 get-stream@^3.0.0:
   version "3.0.0"
@@ -1404,15 +1404,6 @@ htmlparser2@~3.3.0:
     domutils "1.1"
     readable-stream "1.0"
 
-http-errors@1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.6.1.tgz#5f8b8ed98aca545656bf572997387f904a722257"
-  dependencies:
-    depd "1.1.0"
-    inherits "2.0.3"
-    setprototypeof "1.0.3"
-    statuses ">= 1.3.1 < 2"
-
 http-errors@1.6.2:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.6.2.tgz#0a002cc85707192a7e7946ceedc11155f60ec736"
@@ -1444,10 +1435,6 @@ https-proxy-agent@^2.1.0:
   dependencies:
     agent-base "^4.1.0"
     debug "^2.4.1"
-
-iconv-lite@0.4.18:
-  version "0.4.18"
-  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.18.tgz#23d8656b16aae6742ac29732ea8f0336a4789cf2"
 
 iconv-lite@0.4.19, iconv-lite@~0.4.13:
   version "0.4.19"
@@ -1726,31 +1713,23 @@ micro-cors@^0.0.4:
     request "^2.81.0"
     request-promise "^4.2.0"
 
-micro-dev@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/micro-dev/-/micro-dev-1.2.3.tgz#4fcee06f5ce98313a07ed9d72ab51670188dbfb2"
+micro-dev@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/micro-dev/-/micro-dev-1.3.0.tgz#4d32cdb629d8f1f4cf0e9857fafd114be4eb40f0"
   dependencies:
-    boxen "1.2.1"
-    chalk "2.1.0"
+    boxen "1.2.2"
+    chalk "2.3.0"
     chokidar "1.7.0"
     clipboardy "1.1.4"
     debounce "1.0.2"
-    get-port "3.1.0"
+    get-port "3.2.0"
     ip "1.1.5"
     jsome "2.3.26"
-    micro "8.0.2"
+    micro "9.0.0"
     mri "1.1.0"
     pkg-up "2.0.0"
     pretty-error "2.1.1"
     string-length "2.0.0"
-
-micro@8.0.2:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/micro/-/micro-8.0.2.tgz#e49127185c8d1a61146f0555603bef2a7fc47b03"
-  dependencies:
-    media-typer "0.3.0"
-    mri "1.1.0"
-    raw-body "2.3.0"
 
 micro@9.0.0:
   version "9.0.0"
@@ -2068,15 +2047,6 @@ randomatic@^1.1.3:
   dependencies:
     is-number "^3.0.0"
     kind-of "^4.0.0"
-
-raw-body@2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.3.0.tgz#f79ce1acacaba5b6362d33454d785d7129f4bc67"
-  dependencies:
-    bytes "2.5.0"
-    http-errors "1.6.1"
-    iconv-lite "0.4.18"
-    unpipe "1.0.0"
 
 raw-body@2.3.2:
   version "2.3.2"
