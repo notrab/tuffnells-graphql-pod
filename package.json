@@ -8,7 +8,7 @@
     "start": "micro",
     "dev": "micro-dev",
     "build": "babel src -d dist",
-    "postinstall": "yarn build"
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "apollo-errors": "^1.5.1",
