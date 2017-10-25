@@ -1,1 +1,1 @@
-web: micro dist
+web: micro -p $PORT dist
