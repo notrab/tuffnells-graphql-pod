@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "apollo-errors": "^1.5.1",
-    "apollo-server-micro": "1.1.7",
+    "apollo-server-micro": "1.2.0",
     "graphql": "0.11.7",
     "graphql-tools": "2.6.1",
     "https-proxy-agent": "^2.1.0",
