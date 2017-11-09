@@ -19,7 +19,7 @@
     "graphql": "0.11.7",
     "graphql-tools": "2.7.2",
     "https-proxy-agent": "^2.1.0",
-    "micro": "9.0.0",
+    "micro": "9.0.1",
     "micro-cors": "^0.0.4",
     "node-fetch": "1.7.3",
     "postcode": "^0.2.5",
