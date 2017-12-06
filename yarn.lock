@@ -1312,9 +1312,9 @@ graphql-extensions@^0.0.x:
     core-js "^2.5.1"
     source-map-support "^0.5.0"
 
-graphql-tools@2.8.0:
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-2.8.0.tgz#1a248ec6be62b0b77607bba6f7470e7a651425fa"
+graphql-tools@2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-2.12.0.tgz#6286902650537bf7f20ac87159ab5c8b2e9741f8"
   dependencies:
     apollo-utilities "^1.0.1"
     deprecated-decorator "^0.1.6"
